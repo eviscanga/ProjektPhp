@@ -153,7 +153,7 @@ class Admin_model extends CI_Model {
     public function addmenu(){
         $menu_id = $this->input->post("id");
         
-        $data["menu_items"] = $this->input->post("listItems");
+        $data["menu_items"] = $this->input->post("menu_items");
         
         
         $query = $this->db->where('id', $menu_id)->update('menu', $data);
